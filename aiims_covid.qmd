@@ -2,13 +2,14 @@
 title: "Visualizing the Pace of COVID-19 Research"
 subtitle: "Experimental Study of AIIMS, New Delhi"
 author: "Manika Lamba"
-institute: "DLIS, University of Delhi"
+institute: "SIS Annual Convention"
+date: "`r Sys.Date()`"
 format: 
   revealjs:
     #incremental: true
     theme: solarized
     logo: images/du.png
-    footer: "`https://manika-lamba.github.io`"
+    footer: "`https://manika-lamba.github.io/SIS/`"
     slide-number: true
     multiplex: true
     show-slide-number: all
@@ -34,7 +35,7 @@ editor: visual
 
 # Topic Modeling
 
--   Topic modeling makes an excellent tool for discovery and helps to uncover evidence already present in the text
+-   Topic modeling acts as a text mining approach to understand, organize, process, extract, manage, and summarize knowledge. It is an excellent tool for discovery and to uncover evidence already present in the text
 
 -   A topic can be defined as the main idea discussed in a text, i.e., the theme or subject of different granularities
 
@@ -42,17 +43,35 @@ editor: visual
 
 -   It infers abstract topics based on similar patterns of word usage in each documents
 
+::: footer
+:::
+
 # Structural Topic Modeling
 
-![](images/stm%20model.png){fig-align="center"}
+::: columns
+::: {.column width="60%"}
+-   STM allow us to incorporate metadata into our model and uncover how different documents might talk about the same underlying topic using different word choices
+-   In LDA, our topic prevalence and content came from Dirichlet distributions with hyperparameters we set in advance --- sometimes referred to as *a* and *b*
+:::
+
+::: {.column width="40%"}
+![](images/stm%20model.png){width="400"}
+:::
 
 ::: footer
 Plate Diagram for Structural Topic Model (Roberts et al., 2013)
 :::
+:::
+
+# STM (Continue)
+
+-   With STM, our topic prevalence and content come from document metadata
+
+-   The matrix of document metadata used to generate [topic prevalence is "X"]{style="color: blue;"} and the matrix of document metadata used to generate [topic contents is "Y"]{style="color: blue;"}, where X=Y (i.e. we're using the same metadata in both cases), *d* is the number of documents in the corpus and *p* is the number of metadata features
 
 # Need of the Study
 
-This study will help to (i) determine the core topics published by which AIIMS, New Delhi researchers related to COVID-19, and (ii) visualize the results using a dashboard and storyboard
+This study will help to [(i) determine the core topics published by which AIIMS, New Delhi researchers related to COVID-19]{style="color: blue;"}, and [(ii) visualize the results using a dashboard and storyboard]{style="color: red;"}
 
 # Methodology
 
@@ -96,7 +115,6 @@ T10 -- Mortality
 
 ![](images/corr.png){fig-align="center" width="600"}
 
-
 # Visualization of Topics
 
 -   Output of topic modeling is not entirely human-readable, and one way to understand the results is through visualization
@@ -131,7 +149,7 @@ https://manika-lamba.shinyapps.io/covid_aiims/
 
 -   It also identifies papers that are regarded as the cornerstones for different topics in the development of COVID-19 research published by AIIMS, New Delhi
 
-## Conclusion (Continue) 
+## Conclusion (Continue)
 
 -   The results unveil the focus of scientific research, thereby giving deep insights into how the top Indian medical society contributes to combating the COVID-19 pandemic
 
@@ -157,6 +175,8 @@ https://manika-lamba.shinyapps.io/covid_aiims/
 :::
 
 ::: {.column width="30%"}
+`r fontawesome::fa("link")` [manika-lamba.github.io](https://manika-lamba.github.io)
+
 `r fontawesome::fa("twitter")` [\@lamba_manika](https://twitter.com/lamba-manika)
 
 `r fontawesome::fa("github")` [github.com/manika-lamba](https://github.com/manika-lamba)
