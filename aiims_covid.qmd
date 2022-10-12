@@ -1,0 +1,164 @@
+---
+title: "Visualizing the Pace of COVID-19 Research"
+subtitle: "Experimental Study of AIIMS, New Delhi"
+author: "Manika Lamba"
+institute: "DLIS, University of Delhi"
+format: 
+  revealjs:
+    #incremental: true
+    theme: solarized
+    logo: images/du.png
+    footer: "`https://manika-lamba.github.io`"
+    slide-number: true
+    multiplex: true
+    show-slide-number: all
+    controls: true
+    width: 1280
+    height: 720
+    css: [assets/syntax-highlight.css, assets/custom.css, assets/pacman.css]
+    header-includes: |
+      <link rel="stylesheet" href="/assets/fontawesome-free-6.1.1-web/css/font-awesome.min.css">
+      <script defer src="/assets/fontawesome-free-6.1.1-web/js/all.min.js"></script>
+execute:
+  echo: true
+editor: visual
+---
+
+# Introduction
+
+-   Scientists have been studying the human coronavirus since its discovery in the 1960s
+
+-   With the emergence of a new variant of coronavirus in 2019, it became important to devote a significant amount of time to reading and identifying relevant studies to better understand COVID-19
+
+-   It is urgent to sort out important, effective, and meaningful information from large databases to guide scientific research and promote the proper control, prevention, diagnosis, and treatment of COVID-19
+
+# Topic Modeling
+
+-   Topic modeling makes an excellent tool for discovery and helps to uncover evidence already present in the text
+
+-   A topic can be defined as the main idea discussed in a text, i.e., the theme or subject of different granularities
+
+-   There are no machine-readable annotations that can tell the topic modeling programs about the semantic meaning of the words in the text
+
+-   It infers abstract topics based on similar patterns of word usage in each documents
+
+# Structural Topic Modeling
+
+![](images/stm%20model.png){fig-align="center"}
+
+::: footer
+Plate Diagram for Structural Topic Model (Roberts et al., 2013)
+:::
+
+# Need of the Study
+
+This study will help to (i) determine the core topics published by which AIIMS, New Delhi researchers related to COVID-19, and (ii) visualize the results using a dashboard and storyboard
+
+# Methodology
+
+-   Data was retrieved from Web of Science, Scopus, and PubMed databases for the query, "corona" OR "covid-19" OR "coronavirus" restricted to AIIMS, New Delhi
+
+-   Search was performed in April 2021
+
+-   Metadata for 853 studies were identified from all three databases which were then merged and removed for duplicates using the bibliometrix package in R
+
+-   After the preliminary cleaning, a total of 388 publications were finalized for the period 2010-2021 from 199 journals for the study. The structural topic model was performed using stm package in R
+
+# Findings {background-color="#006dae"}
+
+## Core Topics in COVID-19 Research
+
+![](images/stm.png){fig-align="center" width="3000"}
+
+## Core Topics (Continue)
+
+T1 -- Respiratory Infection
+
+T2 -- Drugs Trial and Effectiveness
+
+T3 -- Lockdown in India
+
+T4 -- Patient Care, Practice, and Management
+
+T5 -- Behavioral Studies
+
+T6 -- Mental Health
+
+T7 -- Systematic Reviews and Metanalysis
+
+T8 -- Guidelines to Perform Surgeries in COVID-19 Patients
+
+T9 -- Statements and Recommendations
+
+T10 -- Mortality
+
+# Topic Correlation
+
+![](images/corr.png){fig-align="center" width="600"}
+
+
+# Visualization of Topics
+
+-   Output of topic modeling is not entirely human-readable, and one way to understand the results is through visualization
+
+-   Therefore, we constructed a storyboard and dashboard that is human-readable and easy to comprehend as well as interpret
+
+## Dashboard
+
+[![](images/dashboard.png){width="1700"}](https://manika-lamba.github.io/stm/)
+
+::: footer
+https://manika-lamba.github.io/stm/
+:::
+
+::: notes
+When you click on the figure, a new window will open in your browser where you can interact and visualizes the changes by altering various parameters. Recommended settings are: X-axis = TI; Y-axis = topic of choice; Radius = topic chosen; Color = PY. The titles with topic proportion more than 0.50 (Y-axis) should be considered as the representative titles for that particular topic.
+:::
+
+## Storyboard
+
+[![](images/stroyboard.png){width="1700"}](https://manika-lamba.shinyapps.io/covid_aiims/)
+
+::: footer
+https://manika-lamba.shinyapps.io/covid_aiims/
+:::
+
+## Conclusion
+
+-   Topic modeling and data visualization are critical for exploring and communicating information effectively and helping researchers to continue to progress
+
+-   The study presents an overview of early studies of the COVID-19 crisis published from AIIMS, New Delhi at different scales including topic variation, and their inner interactions
+
+-   It also identifies papers that are regarded as the cornerstones for different topics in the development of COVID-19 research published by AIIMS, New Delhi
+
+## Conclusion (Continue) 
+
+-   The results unveil the focus of scientific research, thereby giving deep insights into how the top Indian medical society contributes to combating the COVID-19 pandemic
+
+-   The methodology from this study can be applied to trace the literature of any field on any topic of interest
+
+-   This study can be used to analyze large datasets of COVID-19 literature to investigate and visualize the ongoing advancements of early scientific research on COVID-19 from the perspective of Artificial Intelligence
+
+## Thank you!
+
+<br>
+
+::: columns
+::: {.column width="40%"}
+![](images/bok%20cover.png){width="500"}
+
+`r fontawesome::fa("link")` [textmining-infopros.github.io/](https://textmining-infopros.github.io/)
+:::
+
+::: {.column width="30%"}
+![](images/book%20cover.png){width="300"}
+
+`r fontawesome::fa("link")` [toc](https://www.igi-global.com/pdf.aspx?tid=296899&ptid=274985&ctid=15&t=Table%20of%20Contents&isxn=9781799889427)
+:::
+
+::: {.column width="30%"}
+`r fontawesome::fa("twitter")` [\@lamba_manika](https://twitter.com/lamba-manika)
+
+`r fontawesome::fa("github")` [github.com/manika-lamba](https://github.com/manika-lamba)
+:::
+:::
