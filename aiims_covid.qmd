@@ -83,11 +83,19 @@ This study will help to [(i) determine the core topics published by which AIIMS,
 
 -   After the preliminary cleaning, a total of 388 publications were finalized for the period 2010-2021 from 199 journals for the study. The structural topic model was performed using stm package in R
 
+::: footer
+:::
+
 # Findings {background-color="#006dae"}
+::: footer
+:::
 
 ## Core Topics in COVID-19 Research
 
 ![](images/stm.png){fig-align="center" width="3000"}
+
+::: footer
+:::
 
 ## Core Topics (Continue)
 
@@ -111,9 +119,15 @@ T9 -- Statements and Recommendations
 
 T10 -- Mortality
 
+::: footer
+:::
+
 # Topic Correlation
 
 ![](images/corr.png){fig-align="center" width="600"}
+
+::: footer
+:::
 
 # Visualization of Topics
 
