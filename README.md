@@ -4,6 +4,6 @@ This repository contains the slides and the paper presented at the [Seminar on "
 
 # Citation
 
-**Paper**: Manika Lamba. (2022). Visualizing the Pace of COVID-19 Research: An Experimental Study of All India Institute of Medical Sciences (AIIMS), New Delhi. <i>In</i> SIS Convention 2022 and Seminor on Information Science and Communication:Opportunities, Expectations and Strategies, India International Centre, New Delhi.
+**Paper**: Lamba, Manika. (2022, October 14). Visualizing the Pace of COVID-19 Research: An Experimental Study of All India Institute of Medical Sciences (AIIMS), New Delhi. Seminar on Information Science and Communication: Opportunities, Expectations and Strategies (SIS 2022), New Delhi, India. https://doi.org/10.5281/zenodo.7191599
 
 **Presentation, Figure, and Related Material**: Manika Lamba. (2022). Visualizing the Pace of COVID-19 Research. https://github.com/manika-lamba/SIS
