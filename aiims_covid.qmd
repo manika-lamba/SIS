@@ -87,44 +87,31 @@ This study will help to [(i) determine the core topics published by which AIIMS,
 :::
 
 # Findings {background-color="#006dae"}
+
 ::: footer
 :::
 
 ## Core Topics in COVID-19 Research
 
-![](images/stm.png){fig-align="center" width="3000"}
+
+![](images/stm2.png){fig-align="center" width="5000"}
+
 
 ::: footer
 :::
 
-## Core Topics (Continue)
-
-T1 -- Respiratory Infection
-
-T2 -- Drugs Trial and Effectiveness
-
-T3 -- Lockdown in India
-
-T4 -- Patient Care, Practice, and Management
-
-T5 -- Behavioral Studies
-
-T6 -- Mental Health
-
-T7 -- Systematic Reviews and Metanalysis
-
-T8 -- Guidelines to Perform Surgeries in COVID-19 Patients
-
-T9 -- Statements and Recommendations
-
-T10 -- Mortality
-
-::: footer
-:::
 
 # Topic Correlation
 
+:::columns
+::: {.column width="50%"}
 ![](images/corr.png){fig-align="center" width="600"}
+:::
+
+:::{.column width="50%"}
+![](images/topics.png){fig-align="center" width="600"}
+:::
+:::
 
 ::: footer
 :::
