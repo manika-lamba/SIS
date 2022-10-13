@@ -8,7 +8,7 @@ format:
   revealjs:
     #incremental: true
     theme: solarized
-    logo: images/du.png
+    logo: images/du.PNG
     footer: "`https://manika-lamba.github.io/SIS/`"
     slide-number: true
     multiplex: true
